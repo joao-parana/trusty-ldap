@@ -25,3 +25,14 @@ homephone: 555-111-2222
 mail: larry.caiyu@gmail.com
 description: hacker guy
 ou: Development Department
+
+dn: cn=Joao Parana,ou=Users,dc=openstack,dc=org
+objectclass: inetOrgPerson
+cn: Joao Parana
+sn: Parana
+uid: parana
+userpassword: {SHA}Piwe5sPMDkDNz+XcQy3Lc3iRWYU=
+homephone: 555-111-2222
+mail: joao.parana@gmail.com
+description: developer guy at PUC-Rio with passwd londrina
+ou: Development Department
