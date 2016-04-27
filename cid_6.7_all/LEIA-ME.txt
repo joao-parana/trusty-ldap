@@ -1,0 +1,50 @@
+#---------------------------------------------------#
+# Arquivo de ajuda do cid 6.7 (closed in directory)
+# By Eduardo Moraes <emoraes25@gmail.com>
+# Homepage: http://sourceforge.net/projects/c-i-d/
+#---------------------------------------------------#
+
+
+	INSTRUÇÕES DE INSTALAÇÃO DO cid_6.7_all:
+
+
+ --> INSTALAÇÃO EM MODO GRÁFICO (RECOMENDADO):
+
+1 - DÊ UM DUPLO-CLIQUE NO PACOTE cid_6.7_all.deb, EM SEGUIDA CLIQUE EM "INSTALAR" NO GERENCIADOR GRÁFICO DE PACOTES QUE DEVERÁ SER ABERTO A DEPENDER DA SUA DISTRIBUIÇÃO (como synaptic no Debian, ou a "Central de Programas Ubuntu" do Ubuntu)
+
+2 - SERÁ SOLICITADA A SENHA DE ADMINISTRADOR DO SISTEMA, EM SEGUIDA O PACOTE SERÁ INSTALADO.
+
+
+ --> INSTALAÇÃO VIA TERMINAL:
+
+1 - APÓS EXTRAIR O PACOTE "cid_6.7_all.tar.gz" ENTRE NO TERMINAL COMO USUÁRIO "ROOT"
+	(NOTA: Utilize o comando "su" para logar como root no terminal do Debian. - Utilize "sudo su" ou "sudo -i" para logar como root no terminal do Ubuntu e/ou distros derivadas)
+
+2 - ACESSE O DIRETÓRIO "cid_6.7_all" A PARTIR DO DIRETÓRIO ONDE O ARQUIVO "cid_6.7_all.tar.gz" FOI DESCOMPACTADO ATRAVÉS DO COMANDO "cd [DIRETÓRIO_DO_DOWNLOAD]/cid_6.7_all"
+	(EXEMPLO: cd /home/$USER/Download/cid_6.7_all)
+
+3 - ATIVE O BIT DE EXECUÇÃO DO ARQUIVO "INSTALL.sh" ATRAVÉS DO COMANDO "chmod +x INSTALL.sh"
+
+4 - EXECUTE O ARQUIVO (SCRIPT) DE INSTALAÇÃO ATRAVÉS DO COMANDO "./INSTALL.sh" ou "sh INSTALL.sh"
+	(OBS: Não utilize o dpkg (dpkg -i cid_6.7_all.deb) para instalar o pacote via terminal, pois ele não trata as dependências do pacote, sendo necessário forçar a instalação das dependências quebradas através de um "apt-get -f install")
+
+
+
+	OBSERVAÇÕES EM CASO DE FALHA NA INSTALAÇÃO CONSIDERE AS SEGUINTES HIPÓTESES:
+
+
+1 - SE FOR UTILIZADA A INSTALAÇÃO VIA TERMINAL, CERTIFIQUE-SE DE QUE ESTÁ REALMENTE LOGADO COMO USUÁRIO "root"
+	(EXEMPLO: root@$HOSTNAME:/home/$USER/Download/cid_6.7_all#)
+
+2 - VERIFIQUE SE HÁ CONEXÃO COM A INTERNET PARA QUE SEJA POSSÍVEL FAZER O DOWNLOAD DAS DEPENDÊNCIAS DO PACOTE
+
+3 - VERIFIQUE SE O ARQUIVO "/etc/apt/sources.list" ESTÁ DEVIDAMENTE CONFIGURADO, E EXECUTE UM "apt-get update --fix-missing"
+
+
+
+	OUTRAS OBSERVAÇÕES:
+
+
+1 - PARA VERSÕES DO CID ANTERIORES A VERSÃO "5.3" ERA NECESSÁRIO REMOVER A ESTAÇÃO DO DOMÍNIO ANTES DE INSTALAR A NOVA VERSÃO. A PARTIR DA VERSÃO 5.3 EM DIANTE ESTE PROCEDIMENTO JÁ É DISPENSÁVEL, "PORÉM RECOMENDADO"!
+
+2 - PARA CASOS DE INSTABILIDADES OU ERROS NO SISTEMA APÓS INGRESSAR OU REMOVÊ-LO DE UM DOMÍNIO POR CONTA DE MODIFICAÇÕES REALIZADAS PELO SCRIPT DO cid EM DETERMINADOS ARQUIVOS DE CONFIGURAÇÃO NO SISTEMA, SERÁ POSSÍVEL RESTAURAR O(S) ARQUIVO(S) EM QUESTÃO, POIS NO DIRETÓRIO "/usr/lib/cid/backup" ESTARÃO SALVOS AS VERSÕES ORIGINAIS DESSES ARQUIVOS DE ANTES DO INGRESSO NO DOMÍNIO, E NO DIRETÓRIO "/usr/lib/cid/snapshots" ESTARÃO OS ARQUIVOS "PROVAVELMENTE COM AS ÚLTIMAS MODIFICAÇÕES VÁLIDAS" DE ANTES DE REMOVER O SISTEMA DE UM DOMÍNIO. ATENÇÃO! SÓ REALIZE ESSAS RESTAURAÇÕES SE TIVER PLENA CIÊNCIA DO QUE ESTÁ FAZENDO, CASO CONTRÁRIO CONTATE APOIO NO EMAIL "emoraes25@gmail.com"!
